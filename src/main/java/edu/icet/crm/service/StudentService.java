@@ -1,5 +1,6 @@
 package edu.icet.crm.service;
 
+import edu.icet.crm.model.IncompleteStudent;
 import edu.icet.crm.model.Student;
 
 import java.util.List;
@@ -11,5 +12,7 @@ public interface StudentService {
 
     Student getStudentByStudentId(String studentId);
 
-    void remove(Student studentByStudentId);
+    void remove(String studentId);
+
+    Student patchUpdate(IncompleteStudent student);
 }
