@@ -1,15 +1,15 @@
 package edu.icet.crm.repository;
 
-import edu.icet.crm.model.Student;
+import edu.icet.crm.entity.StudentEntity;
 
 import java.util.List;
 
 public interface StudentRepository {
-    Student persist(Student student);
+    StudentEntity persist(StudentEntity student);
 
-    List<Student> retrieveAll();
+    List<StudentEntity> retrieveAll();
 
-    Student retrieveStudentByStudentId(String studentId);
+    StudentEntity retrieveStudentByStudentId(Integer studentId);
 
-    void remove(Student studentByStudentId);
+    void remove(StudentEntity studentByStudentId);
 }

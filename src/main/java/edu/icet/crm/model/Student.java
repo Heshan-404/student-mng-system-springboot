@@ -1,6 +1,6 @@
 package edu.icet.crm.model;
 
-import lombok.Data;
+import lombok.*;
 import org.springframework.util.StringUtils;
 
 @Data

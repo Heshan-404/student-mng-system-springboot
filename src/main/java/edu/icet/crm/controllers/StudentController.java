@@ -1,15 +1,11 @@
 package edu.icet.crm.controllers;
 
-
-import ch.qos.logback.core.util.StringUtil;
-import edu.icet.crm.exceptions.InvalidParametersException;
 import edu.icet.crm.model.IncompleteStudent;
 import edu.icet.crm.model.Student;
 import edu.icet.crm.model.SuccessResponse;
 import edu.icet.crm.service.StudentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -19,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @CrossOrigin(origins = "http://localhost:3006")
 public class StudentController {
-
     private static final String SUCCESS_MSG = "SUCCESS";
     private final StudentService studentService;
 
